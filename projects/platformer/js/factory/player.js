@@ -6,7 +6,7 @@
         opspark = window.opspark,
         animations = {},
         spawnX = 30,
-        spawnY = 600;
+        spawnY = 10;
         
     opspark.createPlayer = function (game) {
         let 
@@ -15,7 +15,7 @@
             _run = createState('run'),
             _duck = createDuckState('duck'),
             _idle = createState('idle'),
-            _flyingJump = createFlyingJumpState('flyingJump'),
+            _flyingJump = createFlyingJumpState('Jump'),
             _stop = createStopState('stop'),
             _fire = createFireState('fire'),
             _die = createDieState('die'),
@@ -44,7 +44,7 @@
         
         function createDuckState(name) {
             var 
-                xOffset = -6,
+                xOffset = -90,
                 yOffset = 0,
                 state = createState(name);
             state.duck = doNothing;

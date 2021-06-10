@@ -17,7 +17,7 @@
              */
             switch (type.assetKey) {
                 case 'db':
-                    collectable.body.height = 44;
+                    collectable.body.height = 40;
                     break;
                     
                 case 'grace':
