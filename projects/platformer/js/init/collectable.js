@@ -39,6 +39,15 @@
         // example: 
         createCollectable(type.steve, 200, 170, 6, 0.7);
         createCollectable(type.kennedi, 10, 260, 6, 0.7);
+        createCollectable(type.kennedi, 830, 160, 6, 0.7);
+        createCollectable(type.kennedi, 630, 160, 6, 0.7);
+        createCollectable(type.kennedi, 280, 530, 6, 0.7);
+        createCollectable(type.kennedi, 550, 530, 6, 0.7);
+        createCollectable(type.kennedi, 0, 620, 6, 0.7);
+        createCollectable(type.kennedi, 100, 620, 6, 0.7);
+        createCollectable(type.kennedi, 1300, 320, 6, 0.7);
+        createCollectable(type.kennedi, 50, 620, 6, 0.7);
+        createCollectable(type.max, 150, 613, 6, 0.7);
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
