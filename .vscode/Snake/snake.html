@@ -30,9 +30,9 @@
       
       const CANVAS_BORDER_COLOUR = 'black';
       const CANVAS_BACKGROUND_COLOUR = "white";
-      const SNAKE_COLOUR = 'lightgreen';
+      const SNAKE_COLOUR = "black";
       const SNAKE_BORDER_COLOUR = 'darkgreen';
-
+    
 
       window.onload = function() {
         canvas = document.getElementById("canvas");
@@ -68,7 +68,7 @@
       }
 
       // game world
-      var gridSize = (tileSize = 20); // 20 x 20 = 400
+      var gridSize = (tileSize = 20); // 25 x 25 = 625
       var nextX = (nextY = 0);
 
       // snake
