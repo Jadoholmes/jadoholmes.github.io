@@ -1,0 +1,38 @@
+User Story / Gameplay
+Describe the gameplay
+A two player game bouncing a block keeping it from going into the respective bariers 
+
+What are the conditions when the game begins?
+The paddles will be centered on the sides of the screen and the box will be centered in the middle of the screen randomly chosing a direction to start
+
+Does the game have an end? If so, what are the conditions for when it ends?
+Yea it will end when a player hits 11 points first
+
+What ifs will there be?
+If the ball hits the paddle it will bounce back 
+if the ball hits the top or bottom wall it will leave screen and return on the oppisite side
+if the ball passes either paddle it will give one point
+if a point is given it will reposition the ball
+if points = 11 the game will end
+
+Visual Game Components:
+What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
+The paddles the ball the score board and the win/end game sign
+
+Which will be static? (the board)
+the background and the scoreboard 
+
+Which will be animated? (the box)
+The ball/balls paddles 
+
+What data will you need to manage each game component? For example, in Bouncing Box, the data values were positionX, speedX, and points.
+it will need the x and y positions as well as the score variable
+
+Events / Logic
+What events will occur in this game? (timer events, keyboard events, clicking events?)
+click to start the game movement of the paddles with the arrow keys maybe extra boxes when the score reaches a certian point and winning screen when the score hits 11
+
+How do those events affect the data of the program?
+the arrow keys will effect the position data of the paddles as in increaing or decreasing the x and y positions the score will effect the number of boxes a in increasing the number if the score hits a certian amount and when the winning screen pops up when the score hits 11
+
+For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
