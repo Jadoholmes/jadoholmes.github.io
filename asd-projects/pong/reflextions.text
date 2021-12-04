@@ -26,13 +26,13 @@ Which will be animated? (the box)
 The ball/balls paddles 
 
 What data will you need to manage each game component? For example, in Bouncing Box, the data values were positionX, speedX, and points.
-it will need the x and y positions as well as the score variable
+it will need the x, y and z positions as well as the score variable
 
 Events / Logic
-What events will occur in this game? (timer events, keyboard events, clicking events?)
-click to start the game movement of the paddles with the arrow keys maybe extra boxes when the score reaches a certian point and winning screen when the score hits 11
+What events will occur in this game? (timer events, kvents, clicking events?)
+click to start the game movement of the paddles with the arrow keys and paddles with w and s maybe extra boxes when the score reaches a certian point and winning screen when the score hits 11
 
 How do those events affect the data of the program?
-the arrow keys will effect the position data of the paddles as in increaing or decreasing the x and y positions the score will effect the number of boxes a in increasing the number if the score hits a certian amount and when the winning screen pops up when the score hits 11
+the arrow keys as well as w and s will effect the position data of the paddles as in increaing or decreasing the x and y positions of the paddles the score will effect the number of boxes a in increasing the number if the score hits a certian amount and when the winning screen pops up when the score hits 11
 
 For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
