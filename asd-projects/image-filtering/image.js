@@ -42,9 +42,9 @@ function render(element, image){
 }
 
 // this function converts an RGB string into an array for easy manipulation
-function rgbStringToArray(rgbString) {
+function rgbStringToArray(rgbStr) {
     var rgbArr = rgbStr
-         .substring(4, Str.length-1) // remove "rgb(" and ")"
+         .substring(4, rgbStr.length-1) // remove "rgb(" and ")"
          .replace(/ /g, '') // replace ' ' with ''
          .split(',');       // separate into Array
     
