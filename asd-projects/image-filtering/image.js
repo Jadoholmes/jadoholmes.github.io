@@ -5,8 +5,7 @@ const SQUARE_SIZE = 20;
 const RED = 0;
 const GREEN = 1;
 const BLUE = 2;
-var rgbString = "rgb(150, 150, 150)"
-var rgbNumber = rgbArr
+
 // the image data
 const image = [
     ["rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)", "rgb(150, 150, 150)"],
@@ -49,9 +48,9 @@ function rgbStringToArray(rgbString) {
          .replace(/ /g, '') // replace ' ' with ''
          .split(',');       // separate into Array
     
-    rgbArr[RED] = Number(rgbArr[RED]=225);
-    rgbArr[GREEN] = Number(rgbArr[GREEN]=0);
-    rgbArr[BLUE] = Number(rgbArr[BLUE]=0);
+    rgbArr[RED] = Number(rgbArr[RED]);
+    rgbArr[GREEN] = Number(rgbArr[GREEN]);
+    rgbArr[BLUE] = Number(rgbArr[BLUE]);
 
     return rgbArr;
 }

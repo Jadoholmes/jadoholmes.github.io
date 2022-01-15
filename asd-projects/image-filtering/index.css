@@ -1,6 +1,7 @@
 .square {
-    width: 20px;
+    width: 200px;
     height: 20px;
+    background-color: aquamarine;
     position: absolute;
 }
 

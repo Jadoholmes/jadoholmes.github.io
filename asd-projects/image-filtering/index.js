@@ -7,10 +7,10 @@ $(document).ready(function(){
 
 
 
-
-
-    render($display, image);
     applyFilter()
+    
+    render($display, image);
+    
 
 });
 
@@ -19,16 +19,21 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2 & 4: Create the applyFilter function here
-function applyFilter();
-    for (var r = 0; r<image.length; r++){
-var row = image[r];
 
-for (var c = 0; c < row.length; c++) { 
-    var value = grid[r][c];
 
-    rgb = rgb(110,110,110)(value);
-}
-}
+function applyFilter(){
+    for (var i=0; i < image.length; i++) {
+     var row = image[i];
+        for (var j=0; j < row.length; j++) {
+             var rgbstring= image [i][j];
+             var rgbnumber = rgbStringToArray(rgbstring)
+                rgbnumber[255] 
+                rgbnumber[0]
+                rgbnumber[0]
+        }
+     }
+      
+
 
 // TODO 6: Create the applyFilterNoBackground function
 
