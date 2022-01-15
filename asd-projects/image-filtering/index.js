@@ -27,12 +27,11 @@ function applyFilter(){
         for (var j=0; j < row.length; j++) {
              var rgbstring= image [i][j];
              var rgbnumber = rgbStringToArray(rgbstring)
-                rgbnumber[255] 
-                rgbnumber[0]
-                rgbnumber[0]
+                rgbnumber[GREEN] = 255 
+              
         }
      }
-      
+}
 
 
 // TODO 6: Create the applyFilterNoBackground function
