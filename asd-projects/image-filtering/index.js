@@ -7,8 +7,8 @@ $(document).ready(function(){
 
 
 
-   // applyFilter()
-    applyFilterNoBackground(reddify)
+    applyFilter(increaseGreenByBlue )
+   // applyFilterNoBackground(reddify)
 
     render($display, image);
     
@@ -46,7 +46,7 @@ function applyFilterNoBackground(filterFunction){
            for (var j=0; j < row.length; j++) {
                 var rgbstring= image [i][j];
                 var rgbnumber = rgbStringToArray(rgbstring);
-                   if(rgbnumber === backGround){
+                   if(rgbstring === backGround){
                        return backGround
                    }
                    else{
@@ -68,15 +68,15 @@ function reddify(a){
    
     var result = Math.max(x, 0);
     var result2 = Math.min(result, 255);
-  
+  return result2
   }
   
   function decreaseBlue(i){
   i [BLUE] = KeepInBounds( [BLUE] - 50); 
 }
 
-function icreaseGreenByBlue(y){
-    y [GREEN] = KeepInBounds([BLUE]+ y [GREEN])
+function increaseGreenByBlue(y){
+    y [GREEN] = KeepInBounds([BLUE]+  [GREEN])
 }
 
 
