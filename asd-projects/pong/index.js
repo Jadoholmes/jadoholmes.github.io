@@ -13,31 +13,26 @@ function runProgram(){
   
 
 
-var KEY = {
-  "LEFT": 37,
-  "UP": 38,
-  "RIGHT": 39,
-  "DOWN": 40,
-  "ENTER": 13,
 }
 
 
   // Game Item Objects
-  var positionX = 0; 
-  var speedX = 0; 
-  var positionY = 0;
-  var speedY = 0;
-  var x = parseFloat($("#id").css("left"));
-  var y = parseFloat($("#id").css("top"));
-  var width = $("#id").width();
-  var height = $("#id").height();
-  var leftPaddle = {};
-leftPaddle.x = 0;
-leftPaddle.y = 100;
-leftPaddle.speedX = 1;
-leftPaddle.speedY = 1;
-leftPaddle.id = "#leftPaddle"
 
+  function gameItem(name, species) {
+    var gameItem = {};
+    gameItem.x = 0;
+    gameItem.y = 100;
+    gameItem.speedy = 1;
+    gameItem.speedy = 1;
+    return gameItem;
+  }
+
+  var ball = {};
+ 
+var leftPaddle = {};
+
+var rightPaddle = {};
+ 
 //one-time setup
   let interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL);   // execute newFrame every 0.0166 seconds (60 Frames per second)
 
