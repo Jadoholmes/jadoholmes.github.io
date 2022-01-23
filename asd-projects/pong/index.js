@@ -42,7 +42,6 @@ var ball = factory("#ball");
 
 
 
-
   // one-time setup
   let interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL);   // execute newFrame every 0.0166 seconds (60 Frames per second)
   
@@ -50,7 +49,7 @@ var ball = factory("#ball");
   $(document).on('keyup', handleKeyUp); 
   $(document).on('keydown', handleKeyDown2);                           // change 'eventType' to the type of event you want to handle
   $(document).on('keyup', handleKeyUp2); 
-  (startBall);
+  startBall()
 
 
 function handleKeyDown(event) { 
@@ -123,6 +122,7 @@ function handleKeyUp(event) {
   function newFrame() {
     repositionGameItem()
     redrawGameItem() //yes
+    
   }
   
  
@@ -143,8 +143,7 @@ function handleKeyUp(event) {
     leftPaddle.y += leftPaddle.speedY
     rightPaddle.x += rightPaddle.speedX
     rightPaddle.y += rightPaddle.speedY
-    console.log(ball.speedX)
-    console.log(ball.x)
+   
   }
 
   function redrawGameItem() {
@@ -154,8 +153,10 @@ function handleKeyUp(event) {
   }
  
   function startBall(){
-    $("ball").css("left", 100)
-    $("ball").css("top", 100)
+    $('#ball')
+    .css('top', 220)
+    .css('left', 220)
+
   }
 
   function endGame() {
