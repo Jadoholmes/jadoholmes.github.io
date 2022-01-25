@@ -1,12 +1,12 @@
 
 body {
-  background-color: rgb(71, 223, 71);
+  background-color: rgb(20, 199, 20);
 }
 
 #board {
   width: 440px;
   height: 440px;
-  border: 1px solid rgb(14, 2, 2);
+  border: 1px solid rgb(71, 194, 23);
   background-color: rgb(241, 229, 229);
   position: relative;
   top: 0px;
@@ -36,7 +36,8 @@ body {
       height: 20px;
       border-radius: 10px;
       position: absolute;
- 
+      top: 220px;
+      left: 220px;
     }
 
     #leftScore {
